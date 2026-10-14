@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex,nofollow,noarchive" />
+    <meta name="theme-color" content="#111827" />
+    <title>ASKONAUTS — Playtest Results</title>
+  </head>
+  <body class="admin-body">
+    <main class="admin-shell">
+      <header class="admin-header">
+        <div>
+          <div class="setup-kicker">ASKONAUTS</div>
+          <h1>Playtest Results</h1>
+          <p>Anonymous ASKONAUTS playtest telemetry — P0.5 through P1.2B.</p>
+        </div>
+        <button id="export-csv" class="admin-button" type="button" disabled>EXPORT CSV</button>
+      </header>
+
+      <section id="admin-login" class="admin-login-card">
+        <label for="admin-key">Admin dashboard key</label>
+        <div class="admin-login-row">
+          <input id="admin-key" type="password" autocomplete="current-password" placeholder="Enter PLAYTEST_ADMIN_KEY" />
+          <button id="load-results" class="admin-button primary" type="button">LOAD RESULTS</button>
+        </div>
+        <p id="admin-status" class="admin-status"></p>
+      </section>
+
+      <section id="results" hidden>
+        <div id="summary-cards" class="summary-cards"></div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Started</th><th>Build</th><th>Age</th><th>Status</th><th>Play</th>
+                <th>Quip</th><th>Light</th><th>Blocker</th><th>Evidence</th><th>Free</th>
+                <th>Gate</th><th>Entered</th><th>Explore+</th><th>Complete</th><th>Time→Gate</th>
+                <th>Mission</th><th>Delight</th><th>World</th><th>Secrets</th><th>Worlds</th><th>Found</th><th>Parent: more?</th>
+              </tr>
+            </thead>
+            <tbody id="results-body"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/src/admin.ts"></script>
+  </body>
+</html>
