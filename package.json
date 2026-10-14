@@ -1,0 +1,21 @@
+{
+  "name": "askonauts-shadow-box",
+  "private": true,
+  "version": "7.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test:rules": "node tests/run-ts.mjs tests/mission-rules.test.ts",
+    "smoke": "node tests/smoke.mjs"
+  },
+  "dependencies": {
+    "phaser": "^4.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.5"
+  }
+}
